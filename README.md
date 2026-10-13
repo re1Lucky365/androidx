@@ -66,3 +66,7 @@ https://android-review.googlesource.com/settings/new-agreement
 
 ## Handling binary dependencies
 AndroidX uses git to store all the binary Gradle dependencies. They are stored in `prebuilts/androidx/internal` and `prebuilts/androidx/external` directories in your checkout. All the dependencies in these directories are also available from `google()`, or `mavenCentral()`. We store copies of these dependencies to have hermetic builds. You can pull in [a new dependency using our importMaven tool](development/importMaven/README.md).
+Based on the screenshot provided, there isn't an "Open All" button or option available on this Third Party Notices screen. These open-source license/notice lists on Android typically require tapping each library individually to view its specific license text.  
+If you'd like to inspect all third-party license text at once, here are a few alternatives depending on what you're trying to achieve:
+In-App / App Info: Check if the app or device settings has a search or export option at the top or bottom of the list.
+Source Code / Repositories: Since these are standard open-source AndroidX libraries (e.g., androidx.concurrent, androidx.constraintlayout, androidx.core, androidx.datastore), their source code and standard Apache 2.0 license texts are publicly available on Google's AndroidX GitHub Repository or developer.android.com.
